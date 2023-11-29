@@ -21,6 +21,13 @@ html, body {
   margin-left: auto;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 a {
   color: white;
 }
