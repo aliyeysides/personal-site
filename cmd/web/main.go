@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"aliyeysides/personal-site/templ"
 	"aliyeysides/personal-site/ui"
+	templates "aliyeysides/personal-site/ui/templ"
 
 	"github.com/a-h/templ"
 )
@@ -19,13 +19,13 @@ func main() {
 
 	appComponent := templates.HomePage()
 	aboutComponent := templates.AboutPage()
-	myWorkComponent := templates.MyWorkPage()
+	myWorkComponent := templates.WorkPage()
 
 	mux.Handle("/", templ.Handler(appComponent))
 	mux.Handle("/about-site", templ.Handler(aboutComponent))
 	mux.Handle("/my-work", templ.Handler(myWorkComponent))
 
 	fmt.Println("Listening on port 4000")
-	err := http.ListenAndServe(":4000", mux)
+	err := http.ListenAndServe("localhost:4000", mux)
 	log.Fatal(err)
 }
