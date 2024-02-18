@@ -26,6 +26,6 @@ func main() {
 	mux.Handle("/my-work", templ.Handler(myWorkComponent))
 
 	fmt.Println("Listening on port 4000")
-	err := http.ListenAndServe("localhost:4000", mux)
+	err := http.ListenAndServe(":4000", mux)
 	log.Fatal(err)
 }
