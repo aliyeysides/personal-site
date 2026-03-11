@@ -20,10 +20,12 @@ func main() {
 	appComponent := templates.HomePage()
 	aboutComponent := templates.AboutPage()
 	myWorkComponent := templates.WorkPage()
+	splatsComponent := templates.SplatsPage()
 
 	mux.Handle("/", templ.Handler(appComponent))
 	mux.Handle("/about-site", templ.Handler(aboutComponent))
 	mux.Handle("/my-work", templ.Handler(myWorkComponent))
+	mux.Handle("/splats", templ.Handler(splatsComponent))
 
 	fmt.Println("Listening on port 4000")
 	err := http.ListenAndServe(":4000", mux)

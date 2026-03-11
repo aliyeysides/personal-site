@@ -8,7 +8,7 @@ package templates
 import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
-func HomePage() templ.Component {
+func SplatsPage() templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {
 		templ_7745c5c3_W, ctx := templ_7745c5c3_Input.Writer, templ_7745c5c3_Input.Context
 		if templ_7745c5c3_CtxErr := ctx.Err(); templ_7745c5c3_CtxErr != nil {
@@ -41,7 +41,7 @@ func HomePage() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<body><div class=\"container\"><h1>Ali Yeysideş</h1><p>(/äh lēē • yāy si desh/)</p></div></body>")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<body><div class=\"container\"><h1>Gaussian Splats</h1><p>3D captures made with Gaussian Splatting</p><div class=\"content\"><h2>Copper Lamp — Brooklyn, 2022</h2><iframe id=\"viewer\" width=\"800\" height=\"500\" allow=\"fullscreen; xr-spatial-tracking\" src=\"https://superspl.at/s?id=1e39a520\"></iframe></div></div></body>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
