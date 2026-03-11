@@ -7,8 +7,7 @@ app = "aliyeysides"
 primary_region = "ewr"
 
 [build]
-  builder = "paketobuildpacks/builder-jammy-base"
-  buildpacks = ["docker.io/paketobuildpacks/go"]
+  dockerfile = "Dockerfile"
 
 [http_service]
   internal_port = 4000
