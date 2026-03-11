@@ -1,5 +1,7 @@
 module aliyeysides/personal-site
 
-go 1.21.0
+go 1.23.0
 
-require github.com/a-h/templ v0.2.476
+toolchain go1.23.5
+
+require github.com/a-h/templ v0.3.1001
