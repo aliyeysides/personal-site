@@ -6,6 +6,10 @@ build:
 	templ generate
 	CGO_ENABLED=0 GOOS=linux go build -a -ldflags '-extldflags "-static"' -o personal-site ./cmd/web/
 
-deploy:
-	make build
+deploy-staging:
+	fly deploy --config fly.staging.toml
+
+deploy-production:
 	fly deploy
+
+deploy: deploy-production

@@ -10,13 +10,15 @@ templ layout() {
 			<link rel="stylesheet" href="/static/css/main.css"/>
 		</head>
 		<body>
+			<div class="nav">
+				<a href="/">home</a>
+				<a href="/cv">cv</a>
+				<a href="/my-work">my work</a>
+				<a href="/splats">splats</a>
+				<a href="/about-site">about site</a>
+				<a href="https://github.com/aliyeysides" target="_blank">github</a>
+			</div>
 			<div class="container">
-				<div class="nav">
-					<a href="/my-work">my work</a>
-					<a href="/splats">splats</a>
-					<a href="/about-site">about site</a>
-					<a href="https://github.com/aliyeysides" target="_blank">github</a>
-				</div>
 				{ children... }
 			</div>
 		</body>
