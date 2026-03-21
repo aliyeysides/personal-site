@@ -173,6 +173,318 @@ a {
   color: #5eead4;
 }
 
+/* ── CV Page ── */
+
+.cv-page {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.cv-intro {
+  margin-bottom: 3rem;
+}
+
+.cv-intro h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.cv-subtitle {
+  color: #737373;
+  font-size: 0.85rem;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.cv-bio {
+  font-size: 0.8rem;
+  color: #a3a3a3;
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+
+.cv-languages {
+  font-size: 0.75rem;
+  color: #5eead4;
+}
+
+.cv-lang-sep {
+  margin: 0 0.4rem;
+  color: #404040;
+}
+
+/* ── Timeline ── */
+
+.cv-timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, #5eead4 0%, #262626 40%, #262626 60%, #5eead4 100%);
+}
+
+.timeline-entry {
+  position: relative;
+  margin-bottom: 1.75rem;
+  opacity: 0;
+  transform: translateY(12px);
+  animation: cv-fade-in 0.5s ease forwards;
+}
+
+.timeline-entry:nth-child(2)  { animation-delay: 0.05s; }
+.timeline-entry:nth-child(3)  { animation-delay: 0.10s; }
+.timeline-entry:nth-child(4)  { animation-delay: 0.15s; }
+.timeline-entry:nth-child(5)  { animation-delay: 0.20s; }
+.timeline-entry:nth-child(6)  { animation-delay: 0.25s; }
+.timeline-entry:nth-child(7)  { animation-delay: 0.30s; }
+.timeline-entry:nth-child(8)  { animation-delay: 0.35s; }
+.timeline-entry:nth-child(9)  { animation-delay: 0.40s; }
+.timeline-entry:nth-child(10) { animation-delay: 0.45s; }
+.timeline-entry:nth-child(11) { animation-delay: 0.50s; }
+
+@keyframes cv-fade-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2rem;
+  top: 0.35rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #171717;
+  border: 2px solid #404040;
+  z-index: 1;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.timeline-entry:hover .timeline-dot {
+  border-color: #5eead4;
+  box-shadow: 0 0 8px rgba(94, 234, 212, 0.3);
+}
+
+/* Dot colors by role type */
+.timeline-entry.ic .timeline-dot {
+  border-color: #a3a3a3;
+}
+.timeline-entry.ic:hover .timeline-dot {
+  border-color: #d4d4d4;
+  box-shadow: 0 0 8px rgba(212, 212, 212, 0.2);
+}
+
+.timeline-entry.manager .timeline-dot {
+  border-color: #fbbf24;
+}
+.timeline-entry.manager:hover .timeline-dot {
+  border-color: #fbbf24;
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.3);
+}
+
+.timeline-entry.founder .timeline-dot {
+  border-color: #5eead4;
+  background: #0d1f1d;
+}
+.timeline-entry.founder:hover .timeline-dot {
+  border-color: #5eead4;
+  box-shadow: 0 0 12px rgba(94, 234, 212, 0.4);
+}
+
+.timeline-entry.origin .timeline-dot {
+  width: 13px;
+  height: 13px;
+  left: calc(-2rem - 1px);
+  background: #5eead4;
+  border-color: #5eead4;
+}
+
+.timeline-date {
+  font-size: 0.65rem;
+  color: #525252;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.03em;
+}
+
+.timeline-card {
+  border-left: 1px solid transparent;
+  padding-left: 0.75rem;
+  transition: border-color 0.2s;
+}
+
+.timeline-entry:hover .timeline-card {
+  border-left-color: #262626;
+}
+
+.timeline-role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.1rem;
+}
+
+.timeline-company {
+  font-size: 0.85rem;
+  color: #5eead4;
+  margin-bottom: 0.15rem;
+}
+
+.timeline-meta,
+.timeline-duration {
+  font-size: 0.7rem;
+  color: #525252;
+}
+
+.timeline-desc {
+  font-size: 0.75rem;
+  color: #737373;
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.4rem;
+}
+
+/* Pivot tags */
+.tag.pivot-tag {
+  color: #5eead4;
+  border-color: #1a3a36;
+  background: #0d1f1d;
+}
+
+.tag.ic-tag {
+  color: #a3a3a3;
+  border-color: #303030;
+  background: #1a1a1a;
+}
+
+.tag.manager-tag {
+  color: #fbbf24;
+  border-color: #3d2f0a;
+  background: #1f1a0a;
+}
+
+/* ── Skills Section ── */
+
+.cv-section {
+  margin-bottom: 2.5rem;
+}
+
+.cv-section-title {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #737373;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.cv-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-group {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.skill-label {
+  font-size: 0.7rem;
+  color: #525252;
+  min-width: 90px;
+  flex-shrink: 0;
+}
+
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+/* ── Certs ── */
+
+.cv-certs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cert-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.cert-source {
+  color: #5eead4;
+  min-width: 90px;
+  flex-shrink: 0;
+  font-size: 0.7rem;
+}
+
+.cert-name {
+  color: #a3a3a3;
+}
+
+/* ── Pivot Legend ── */
+
+.cv-pivot-legend {
+  display: flex;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #1a1a1a;
+  font-size: 0.65rem;
+  color: #525252;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+
+.legend-dot.ic-dot {
+  border-color: #a3a3a3;
+  background: transparent;
+}
+
+.legend-dot.manager-dot {
+  border-color: #fbbf24;
+  background: transparent;
+}
+
+.legend-dot.founder-dot {
+  border-color: #5eead4;
+  background: #0d1f1d;
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 600px) {
@@ -189,5 +501,44 @@ a {
 
   .work-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cv-page {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .cv-timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.5rem;
+  }
+
+  .timeline-entry.origin .timeline-dot {
+    left: calc(-1.5rem - 1px);
+  }
+
+  .skill-group {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .skill-label {
+    min-width: unset;
+  }
+
+  .cert-item {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .cert-source {
+    min-width: unset;
+  }
+
+  .cv-pivot-legend {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

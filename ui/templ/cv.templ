@@ -1,0 +1,253 @@
+package templates
+
+templ CVPage() {
+	@layout() {
+		<div class="cv-page">
+			<div class="cv-intro">
+				<h1>cv</h1>
+				<p class="cv-subtitle">founder · engineer · builder</p>
+				<p class="cv-bio">
+					I started with a hookah cafe in Pennsylvania, taught myself to code, and never stopped building.
+					From fintech platforms serving 300K+ clients at Vanguard to AI-powered real estate tools at BrikMate —
+					I've moved between individual contributor, engineering manager, and founder roles,
+					always drawn to the intersection of technology and entrepreneurship.
+				</p>
+				<div class="cv-languages">
+					<span class="cv-lang">English</span>
+					<span class="cv-lang-sep">·</span>
+					<span class="cv-lang">Türkçe</span>
+				</div>
+			</div>
+
+			<div class="cv-timeline">
+				<div class="timeline-line"></div>
+
+				<!-- BrikMate -->
+				<div class="timeline-entry founder">
+					<div class="timeline-dot"></div>
+					<div class="timeline-date">Jul 2023 — Aug 2025</div>
+					<div class="timeline-card">
+						<div class="timeline-role">Co-Founder</div>
+						<div class="timeline-company">BrikMate</div>
+						<div class="timeline-duration">2 yrs 2 mos</div>
+						<div class="timeline-tags">
+							<span class="tag pivot-tag">founder</span>
+							<span class="tag">real-estate</span>
+							<span class="tag">ai</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- The Mint -->
+				<div class="timeline-entry founder">
+					<div class="timeline-dot"></div>
+					<div class="timeline-date">Mar 2024 — May 2024</div>
+					<div class="timeline-card">
+						<div class="timeline-role">Entrepreneur in Residence</div>
+						<div class="timeline-company">The Mint</div>
+						<div class="timeline-meta">San Francisco, CA · 3 mos</div>
+						<div class="timeline-tags">
+							<span class="tag pivot-tag">founder</span>
+							<span class="tag">incubator</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Antler -->
+				<div class="timeline-entry founder">
+					<div class="timeline-dot"></div>
+					<div class="timeline-date">Oct 2022 — Nov 2022</div>
+					<div class="timeline-card">
+						<div class="timeline-role">Entrepreneur in Residence</div>
+						<div class="timeline-company">Antler</div>
+						<div class="timeline-meta">NYC Metro Area · 2 mos</div>
+						<div class="timeline-tags">
+							<span class="tag pivot-tag">founder</span>
+							<span class="tag">vc</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Localize -->
+				<div class="timeline-entry ic">
+					<div class="timeline-dot"></div>
+					<div class="timeline-date">Apr 2021 — Nov 2021</div>
+					<div class="timeline-card">
+						<div class="timeline-role">Full Stack Engineer</div>
+						<div class="timeline-company">Localize</div>
+						<div class="timeline-duration">8 mos</div>
+						<div class="timeline-tags">
+							<span class="tag ic-tag">ic</span>
+							<span class="tag">i18n</span>
+							<span class="tag">saas</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Vanguard - Dev Manager -->
+				<div class="timeline-entry manager">
+					<div class="timeline-dot"></div>
+					<div class="timeline-date">Jan 2020 — Apr 2021</div>
+					<div class="timeline-card">
+						<div class="timeline-role">Development Manager</div>
+						<div class="timeline-company">Vanguard</div>
+						<div class="timeline-meta">Philadelphia, PA · 1 yr 4 mos</div>
+						<div class="timeline-tags">
+							<span class="tag manager-tag">manager</span>
+							<span class="tag">fintech</span>
+							<span class="tag">enterprise</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Vanguard - Innovation Dev -->
+				<div class="timeline-entry ic">
+					<div class="timeline-dot"></div>
+					<div class="timeline-date">Jul 2018 — Jan 2020</div>
+					<div class="timeline-card">
+						<div class="timeline-role">Innovation Developer</div>
+						<div class="timeline-company">Vanguard</div>
+						<div class="timeline-meta">Greater Philadelphia · 1 yr 7 mos</div>
+						<div class="timeline-tags">
+							<span class="tag ic-tag">ic</span>
+							<span class="tag">fintech</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Chaikin Analytics -->
+				<div class="timeline-entry ic">
+					<div class="timeline-dot"></div>
+					<div class="timeline-date">Mar 2017 — Jun 2018</div>
+					<div class="timeline-card">
+						<div class="timeline-role">Software Engineer</div>
+						<div class="timeline-company">Chaikin Analytics</div>
+						<div class="timeline-meta">Philadelphia, PA · 1 yr 4 mos</div>
+						<div class="timeline-tags">
+							<span class="tag ic-tag">ic</span>
+							<span class="tag">fintech</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Jarvus Innovations -->
+				<div class="timeline-entry ic">
+					<div class="timeline-dot"></div>
+					<div class="timeline-date">Apr 2016 — Mar 2017</div>
+					<div class="timeline-card">
+						<div class="timeline-role">Consulting Software Engineer</div>
+						<div class="timeline-company">Jarvus Innovations</div>
+						<div class="timeline-meta">Philadelphia, PA · 1 yr</div>
+						<div class="timeline-tags">
+							<span class="tag ic-tag">ic</span>
+							<span class="tag">consulting</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- OnCourse -->
+				<div class="timeline-entry ic">
+					<div class="timeline-dot"></div>
+					<div class="timeline-date">Jun 2015 — Mar 2016</div>
+					<div class="timeline-card">
+						<div class="timeline-role">Software Engineer</div>
+						<div class="timeline-company">OnCourse Systems for Education</div>
+						<div class="timeline-meta">Media, PA · 10 mos</div>
+						<div class="timeline-tags">
+							<span class="tag ic-tag">ic</span>
+							<span class="tag">edtech</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tulip -->
+				<div class="timeline-entry founder origin">
+					<div class="timeline-dot"></div>
+					<div class="timeline-date">Aug 2010 — Sep 2012</div>
+					<div class="timeline-card">
+						<div class="timeline-role">Founder</div>
+						<div class="timeline-company">Tulip Hookah Cafe</div>
+						<div class="timeline-meta">Langhorne, PA · 2 yrs 2 mos</div>
+						<div class="timeline-desc">where it all started</div>
+						<div class="timeline-tags">
+							<span class="tag pivot-tag">founder</span>
+							<span class="tag">first venture</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cv-section">
+				<h2 class="cv-section-title">skills</h2>
+				<div class="cv-skills">
+					<div class="skill-group">
+						<span class="skill-label">languages</span>
+						<div class="skill-items">
+							<span class="tag">TypeScript/JavaScript</span>
+							<span class="tag">Python</span>
+							<span class="tag">Go</span>
+							<span class="tag">Lua</span>
+							<span class="tag">C</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<span class="skill-label">frontend</span>
+						<div class="skill-items">
+							<span class="tag">Next.js</span>
+							<span class="tag">React</span>
+							<span class="tag">React Query</span>
+							<span class="tag">tRPC</span>
+							<span class="tag">Tailwind</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<span class="skill-label">backend</span>
+						<div class="skill-items">
+							<span class="tag">Prisma</span>
+							<span class="tag">BullMQ</span>
+							<span class="tag">Postgres</span>
+							<span class="tag">Redis</span>
+							<span class="tag">SQLite</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<span class="skill-label">infra & tools</span>
+						<div class="skill-items">
+							<span class="tag">Docker</span>
+							<span class="tag">Git</span>
+							<span class="tag">AWS</span>
+							<span class="tag">Linear</span>
+							<span class="tag">Jira</span>
+							<span class="tag">Claude Code</span>
+							<span class="tag">Codex</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cv-section">
+				<h2 class="cv-section-title">education & certs</h2>
+				<div class="cv-certs">
+					<div class="cert-item">
+						<span class="cert-source">Stanford University</span>
+						<span class="cert-name">Machine Learning</span>
+					</div>
+					<div class="cert-item">
+						<span class="cert-source">AWS</span>
+						<span class="cert-name">Fundamentals: Addressing Security Risk</span>
+					</div>
+					<div class="cert-item">
+						<span class="cert-source">AWS</span>
+						<span class="cert-name">Fundamentals: Going Cloud-Native</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="cv-pivot-legend">
+				<span class="legend-item"><span class="legend-dot ic-dot"></span> individual contributor</span>
+				<span class="legend-item"><span class="legend-dot manager-dot"></span> manager</span>
+				<span class="legend-item"><span class="legend-dot founder-dot"></span> founder</span>
+			</div>
+		</div>
+	}
+}
