@@ -29,7 +29,7 @@ func layout() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0\"><title>Ali Yeysideş</title><link rel=\"stylesheet\" href=\"/static/css/main.css\"></head><body><div class=\"container\"><div class=\"nav\"><a href=\"/my-work\">my work</a> <a href=\"/splats\">splats</a> <a href=\"/about-site\">about site</a> <a href=\"https://github.com/aliyeysides\" target=\"_blank\">github</a></div>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0\"><title>Ali Yeysideş</title><link rel=\"stylesheet\" href=\"/static/css/main.css\"></head><body><div class=\"nav\"><a href=\"/\">home</a> <a href=\"/my-work\">my work</a> <a href=\"/splats\">splats</a> <a href=\"/about-site\">about site</a> <a href=\"https://github.com/aliyeysides\" target=\"_blank\">github</a></div><div class=\"container\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

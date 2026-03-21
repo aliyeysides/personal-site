@@ -15,11 +15,15 @@ html, body {
 }
 
 .nav {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-end;
-  margin-left: auto;
+  gap: 0.25rem;
+  z-index: 100;
+  font-size: 0.85rem;
 }
 
 .content {
@@ -172,6 +176,13 @@ a {
 /* ── Responsive ── */
 
 @media (max-width: 600px) {
+  .nav {
+    position: fixed;
+    top: 0.5rem;
+    right: 0.75rem;
+    font-size: 0.8rem;
+  }
+
   .work-page {
     padding: 1.5rem 1rem 3rem;
   }
