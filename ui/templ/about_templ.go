@@ -41,7 +41,7 @@ func AboutPage() templ.Component {
 				}()
 			}
 			ctx = templ.InitializeContext(ctx)
-			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<body><div class=\"container\"><h1>Ali Yeysideş</h1><p>this site is built with Go + Templ and deployed with Fly.io. You can view the code <a href=\"https://github.com/aliyeysides/personal-site\" target=\"_blank\">here</a>.</p></div></body>")
+			templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 1, "<body><div class=\"container\"><h1>Ali Yeysideş</h1><p>this is a personal dumping ground for things i make, things i like, and whatever else i feel like putting on the internet. no grand vision — just a place to tinker.</p><h2>how it's built</h2><p>the site is built with <a href=\"https://templ.guide\" target=\"_blank\">Go + Templ</a> and deployed on <a href=\"https://fly.io\" target=\"_blank\">Fly.io</a>. you can view the source <a href=\"https://github.com/aliyeysides/personal-site\" target=\"_blank\">here</a>.</p><h2>how it's run</h2><p>this site is co-managed by me and my AI agent <strong>Ted</strong>, powered by <a href=\"https://openclaw.com\" target=\"_blank\">OpenClaw</a>. the workflow is simple: i text ideas on Telegram, Ted builds and ships them. most of what you see here was pair-programmed over chat.</p></div></body>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
