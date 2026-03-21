@@ -226,7 +226,7 @@ a {
 
 .timeline-line {
   position: absolute;
-  left: 5px;
+  left: 7.5px;
   top: 0;
   bottom: 0;
   width: 1px;
@@ -263,52 +263,24 @@ a {
   position: absolute;
   left: -2rem;
   top: 0.35rem;
-  width: 11px;
-  height: 11px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  background: #171717;
-  border: 2px solid #404040;
+  background: #5eead4;
+  border: none;
   z-index: 1;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  transition: box-shadow 0.3s;
 }
 
 .timeline-entry:hover .timeline-dot {
-  border-color: #5eead4;
   box-shadow: 0 0 8px rgba(94, 234, 212, 0.3);
 }
 
-/* Dot colors by role type */
-.timeline-entry.ic .timeline-dot {
-  border-color: #a3a3a3;
-}
-.timeline-entry.ic:hover .timeline-dot {
-  border-color: #d4d4d4;
-  box-shadow: 0 0 8px rgba(212, 212, 212, 0.2);
-}
-
-.timeline-entry.manager .timeline-dot {
-  border-color: #fbbf24;
-}
-.timeline-entry.manager:hover .timeline-dot {
-  border-color: #fbbf24;
-  box-shadow: 0 0 8px rgba(251, 191, 36, 0.3);
-}
-
-.timeline-entry.founder .timeline-dot {
-  border-color: #5eead4;
-  background: #0d1f1d;
-}
-.timeline-entry.founder:hover .timeline-dot {
-  border-color: #5eead4;
-  box-shadow: 0 0 12px rgba(94, 234, 212, 0.4);
-}
-
 .timeline-entry.origin .timeline-dot {
-  width: 13px;
-  height: 13px;
-  left: calc(-2rem - 1px);
+  width: 15px;
+  height: 15px;
+  left: -2rem;
   background: #5eead4;
-  border-color: #5eead4;
 }
 
 .timeline-date {
@@ -361,129 +333,7 @@ a {
   margin-top: 0.4rem;
 }
 
-/* Pivot tags */
-.tag.pivot-tag {
-  color: #5eead4;
-  border-color: #1a3a36;
-  background: #0d1f1d;
-}
 
-.tag.ic-tag {
-  color: #a3a3a3;
-  border-color: #303030;
-  background: #1a1a1a;
-}
-
-.tag.manager-tag {
-  color: #fbbf24;
-  border-color: #3d2f0a;
-  background: #1f1a0a;
-}
-
-/* ── Skills Section ── */
-
-.cv-section {
-  margin-bottom: 2.5rem;
-}
-
-.cv-section-title {
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: #737373;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #1a1a1a;
-}
-
-.cv-skills {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.skill-group {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-}
-
-.skill-label {
-  font-size: 0.7rem;
-  color: #525252;
-  min-width: 90px;
-  flex-shrink: 0;
-}
-
-.skill-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-}
-
-/* ── Certs ── */
-
-.cv-certs {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.cert-item {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
-  font-size: 0.8rem;
-}
-
-.cert-source {
-  color: #5eead4;
-  min-width: 90px;
-  flex-shrink: 0;
-  font-size: 0.7rem;
-}
-
-.cert-name {
-  color: #a3a3a3;
-}
-
-/* ── Pivot Legend ── */
-
-.cv-pivot-legend {
-  display: flex;
-  gap: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #1a1a1a;
-  font-size: 0.65rem;
-  color: #525252;
-}
-
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.legend-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: 2px solid;
-}
-
-.legend-dot.ic-dot {
-  border-color: #a3a3a3;
-  background: transparent;
-}
-
-.legend-dot.manager-dot {
-  border-color: #fbbf24;
-  background: transparent;
-}
-
-.legend-dot.founder-dot {
-  border-color: #5eead4;
-  background: #0d1f1d;
-}
 
 /* ── Responsive ── */
 
@@ -516,29 +366,6 @@ a {
   }
 
   .timeline-entry.origin .timeline-dot {
-    left: calc(-1.5rem - 1px);
-  }
-
-  .skill-group {
-    flex-direction: column;
-    gap: 0.4rem;
-  }
-
-  .skill-label {
-    min-width: unset;
-  }
-
-  .cert-item {
-    flex-direction: column;
-    gap: 0.2rem;
-  }
-
-  .cert-source {
-    min-width: unset;
-  }
-
-  .cv-pivot-legend {
-    flex-direction: column;
-    gap: 0.5rem;
+    left: -1.5rem;
   }
 }
