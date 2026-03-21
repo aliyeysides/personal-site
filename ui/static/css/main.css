@@ -3,6 +3,7 @@ html, body {
   color: white;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   padding: 5px;
+  margin: 0;
 }
 
 .container {
@@ -10,7 +11,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .nav {
@@ -32,7 +33,7 @@ a {
   color: white;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
   background: #5eead4;
   color: black;
 }
@@ -40,4 +41,142 @@ a {
 ::selection {
   background: #5eead4;
   color: black;
+}
+
+/* ── Work Page ── */
+
+.work-page {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.work-page h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.work-subtitle {
+  color: #737373;
+  font-size: 0.85rem;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1px;
+}
+
+.project-card {
+  border: 1px solid #262626;
+  padding: 1.25rem;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.project-card:hover {
+  border-color: #5eead4;
+  background: #0a0a0a;
+}
+
+.project-card.featured {
+  border-color: #404040;
+}
+
+.project-card.featured:hover {
+  border-color: #5eead4;
+}
+
+.project-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5eead4;
+  text-decoration: none;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+}
+
+.project-stars {
+  font-size: 0.75rem;
+  color: #a3a3a3;
+  white-space: nowrap;
+}
+
+.project-desc {
+  font-size: 0.8rem;
+  color: #a3a3a3;
+  line-height: 1.5;
+  margin: 0 0 0.75rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.tag {
+  font-size: 0.65rem;
+  color: #5eead4;
+  border: 1px solid #1a3a36;
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  background: #0d1f1d;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  font-size: 0.75rem;
+  color: #737373;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.project-links a:hover {
+  color: #5eead4;
+}
+
+.work-footer {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.work-footer a {
+  font-size: 0.85rem;
+  color: #737373;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.work-footer a:hover {
+  color: #5eead4;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 600px) {
+  .work-page {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
 }
